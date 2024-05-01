@@ -1,0 +1,9 @@
+.DS_Store
+admin.conf
+config
+.idea
+Vagrantfile
+join.sh
+out
+.vagrant
+.kube

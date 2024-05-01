@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: multipod
+spec:
+  containers:
+    - name: nginx-container
+      image: nginx:1.14
+      imagePullPolicy: IfNotPresent
+      ports:
+        - containerPort: 80
+          protocol: TCP
+    - name: centos-container
+      image: centos:7
+      command:
+        - sleep
+        - "10000"
