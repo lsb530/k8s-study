@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: clusterip-service
+spec:
+  type: ClusterIP
+  clusterIP: 10.100.100.100 # 생략하면 자동 부여(충돌을 막기 위해 고정시키지 않음)
+  selector:
+    app: webui
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
