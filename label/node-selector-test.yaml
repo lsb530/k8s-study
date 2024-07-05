@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod-node-selector-test
+spec:
+  nodeSelector:
+    gpu: "true"
+    disk: ssd
+    boki: handsome # 추가
+  containers:
+    - name: nginx
+      image: nginx:1.14
+      ports:
+        - containerPort: 80
