@@ -1,0 +1,25 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: mongodb-pod
+  labels:
+    app: mongodb
+spec:
+  affinity:
+    podAntiAffinity:
+      requiredDuringSchedulingIgnoredDuringExecution:
+        - labelSelector:
+            matchExpressions:
+              - key: app
+                operator: In
+                values:
+                  - pod-ml
+          topologyKey: "kubernetes.io/hostname"
+  containers:
+    - name: mongodb
+      image: mongo
+      imagePullPolicy: IfNotPresent
+      ports:
+        - name: mongodb
+          containerPort: 27017
+          protocol: TCP
