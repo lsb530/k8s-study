@@ -1,0 +1,13 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  namespace: default
+  name: developer-binding-myuser
+subjects:
+  - kind: User
+    name: myuser
+    apiGroup: rbac.authorization.k8s.io
+roleRef:
+  kind: ClusterRole
+  name: developer
+  apiGroup: rbac.authorization.k8s.io
