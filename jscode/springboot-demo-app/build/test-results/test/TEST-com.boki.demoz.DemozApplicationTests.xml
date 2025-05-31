@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.boki.demoz.DemozApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-05-30T16:20:21.974Z" hostname="iseungbog-ui-MacBookPro.local" time="0.421">
+  <properties/>
+  <testcase name="contextLoads()" classname="com.boki.demoz.DemozApplicationTests" time="0.421"/>
+  <system-out><![CDATA[01:20:21.237 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.boki.demoz.DemozApplicationTests]: DemozApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+01:20:21.307 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.boki.demoz.DemozApplication for test class com.boki.demoz.DemozApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.5.0)
+
+2025-05-31T01:20:21.511+09:00  INFO 30534 --- [demoz] [    Test worker] com.boki.demoz.DemozApplicationTests     : Starting DemozApplicationTests using Java 21.0.4 with PID 30534 (started by boki in /Users/boki/IdeaProjects/demoz)
+2025-05-31T01:20:21.512+09:00  INFO 30534 --- [demoz] [    Test worker] com.boki.demoz.DemozApplicationTests     : No active profile set, falling back to 1 default profile: "default"
+2025-05-31T01:20:21.968+09:00  INFO 30534 --- [demoz] [    Test worker] com.boki.demoz.DemozApplicationTests     : Started DemozApplicationTests in 0.588 seconds (process running for 1.194)
+]]></system-out>
+  <system-err><![CDATA[Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build as described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org.mockito/org/mockito/Mockito.html#0.3
+WARNING: A Java agent has been loaded dynamically (/Users/boki/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy-agent/1.17.5/58f9507f5f28d1d3e7adfb4ec2fe37c29d332c9b/byte-buddy-agent-1.17.5.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+]]></system-err>
+</testsuite>
