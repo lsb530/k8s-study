@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nest-pod
+spec:
+  containers:
+    - name: nest-container
+      image: nest-server
+      imagePullPolicy: IfNotPresent
+      ports:
+        - name: nest-pod
+          containerPort: 3000
+          protocol: TCP
+  restartPolicy: Always
+  
