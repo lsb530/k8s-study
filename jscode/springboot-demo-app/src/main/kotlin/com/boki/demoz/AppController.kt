@@ -8,7 +8,7 @@ class AppController {
 
     @GetMapping
     fun home(): String {
-        return "Hello, World!"
+        return "Version 1.1"
     }
 
 }
