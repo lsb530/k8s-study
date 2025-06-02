@@ -5,7 +5,7 @@ metadata:
 
 # Deployment 세부 정보
 spec:
-  replicas: 5
+  replicas: 3
   selector:
     matchLabels:
       app: backend-app
@@ -18,10 +18,15 @@ spec:
     spec:
       containers:
         - name: spring-container
-          image: spring-server:1.1
+          image: spring-server
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8080
               protocol: TCP
+          env:
+            - name: MY_ACCOUNT
+              value: boki
+            - name: MY_PASSWORD
+              value: pwd1234
       restartPolicy: Always
       
