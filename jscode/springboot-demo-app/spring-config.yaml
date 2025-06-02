@@ -4,3 +4,6 @@ metadata:
   name: spring-config
 data:
   my-account: boki
+  db-host: mysql-service
+  db-port: "3306"
+  db-name: kub-practice
