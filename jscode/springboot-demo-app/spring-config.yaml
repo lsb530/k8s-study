@@ -4,4 +4,3 @@ metadata:
   name: spring-config
 data:
   my-account: boki
-  my-password: password1234
