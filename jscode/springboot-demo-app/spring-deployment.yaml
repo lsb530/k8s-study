@@ -34,5 +34,15 @@ spec:
                 secretKeyRef:
                   name: spring-secret
                   key: my-password
+            - name: DB_HOST
+              value: mysql-service
+            - name: DB_PORT
+              value: "3306"
+            - name: DB_NAME
+              value: kub-practice
+            - name: DB_USERNAME
+              value: root
+            - name: DB_PASSWORD
+              value: password1234
       restartPolicy: Always
       
