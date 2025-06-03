@@ -1,0 +1,24 @@
+spring:
+  # local: jdbc:mysql://localhost:30002/boki
+  # prod: jdbc:mysql://mysql-service:3306/kub-practice
+  datasource:
+    url: jdbc:mysql://${DB_HOST}:${DB_PORT}/${DB_NAME}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    show-sql: true
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+#        format_sql: true
+#        use_sql_comments: true
+        highlight_sql: true
+
+logging:
+  level:
+#    org.hibernate.type.descriptor.sql: trace
+    org.hibernate.orm.jdbc.bind: trace
